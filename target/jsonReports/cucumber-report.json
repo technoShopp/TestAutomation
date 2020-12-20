@@ -1,0 +1,182 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-19T11:54:13.437Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate the ADD Place One API",
+        "description": "",
+        "id": "validate-the-google-maps-add-and-get-feature;validate-the-add-place-one-api",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1650000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the query parameter and the payload",
+            "match": {
+              "location": "stepDefinitions.googleMapsSD.the_queryparameter_and_the_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3191000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the POST request is hit for the end point URL",
+            "match": {
+              "location": "stepDefinitions.googleMapsSD.the_post_request_is_hit_for_the_end_point_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the STATUSCODE should be OK",
+            "match": {
+              "location": "stepDefinitions.googleMapsSD.the_statuscode_should_be_ok()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the Google Maps Add and Get feature",
+    "description": "",
+    "id": "validate-the-google-maps-add-and-get-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GoogleMaps.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-19T11:54:18.403Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validate the ADD Place One API with Parameterization and DD",
+        "description": "",
+        "id": "validate-the-library-api;validate-the-add-place-one-api-with-parameterization-and-dd;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the query parameter and the payload",
+            "match": {
+              "location": "stepDefinitions.googleMapsSD.the_queryparameter_and_the_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2013000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the \"post\" request is hit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 4
+                }
+              ],
+              "location": "stepDefinitions.googleMapsSD.the_request_is_hit_for_the(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the statusCode should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.googleMapsSD.the_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the Library API",
+    "description": "",
+    "id": "validate-the-library-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LibraryAPI.feature",
+    "tags": []
+  }
+]

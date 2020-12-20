@@ -1,0 +1,61 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "website": "http://google.com",
+    "types": [
+        "POC",
+        "YUI"
+    ],
+    "address": "ABC Home",
+    "name": "(+91) 983 893 3937",
+    "accuracy": 50,
+    "language": "French-IN",
+    "location": {
+        "lng": 33.427362,
+        "lat": -38.383494
+    }
+}
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 11:54:14 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Last-Modified: Mon, 30 Nov 2020 22:19:16 GMT
+ETag: "403-5b55a6690c100-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 493
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Rahul Shetty Academy</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <script data-ad-client="ca-pub-9851078085090971" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"/>
+    <link rel="stylesheet" href="styles.1dd7dba42f16dcc4d92b.css"/>
+  </head>
+  <body>
+    <app-root/>
+    <script src="runtime-es2015.1eba213af0b233498d9d.js" type="module"/>
+    <script defer="defer" src="runtime-es5.1eba213af0b233498d9d.js" nomodule="nomodule"/>
+    <script defer="defer" src="polyfills-es5.049f620af8c864cf4d88.js" nomodule="nomodule"/>
+    <script src="polyfills-es2015.f2c5ab749249a66bdf26.js" type="module"/>
+    <script defer="defer" src="scripts.96315435df8f90fcd841.js"/>
+    <script src="main-es2015.722a71f43646644b48f9.js" type="module"/>
+    <script defer="defer" src="main-es5.722a71f43646644b48f9.js" nomodule="nomodule"/>
+  </body>
+</html>
