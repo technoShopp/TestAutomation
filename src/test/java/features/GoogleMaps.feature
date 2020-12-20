@@ -1,7 +1,7 @@
 Feature: Validate the Google Maps Add and Get feature
 
 @regression
-Scenario: Validate the ADD Place One API
+Scenario: Validate the ADD Place One API service
 Given the query parameter and the payload 
 When the POST request is hit for the end point URL
 Then the STATUSCODE should be OK
