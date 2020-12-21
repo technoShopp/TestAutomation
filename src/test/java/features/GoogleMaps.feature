@@ -7,7 +7,7 @@ When the POST request is hit for the end point URL
 Then the STATUSCODE should be OK
 
 
-Scenario: Validate the ADD Place Two API
+Scenario: Validate the ADD Place Two API push from the new branch
 Given the query parameter and the payload 
 When the POST two request is hit for the end point URL
 Then the STATUSCODE two should be OK
