@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5542" started-at="2020-12-12T18:51:19 AEST" finished-at="2020-12-12T18:51:24 AEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5542" started-at="2020-12-12T18:51:19 AEST" finished-at="2020-12-12T18:51:24 AEST">
+      <class name="MapAPISpecBuilder">
+        <test-method status="PASS" signature="SerializeDeserialize()[pri:0, instance:MapAPISpecBuilder@3712b94]" name="SerializeDeserialize" duration-ms="5479" started-at="2020-12-12T18:51:19 AEST" finished-at="2020-12-12T18:51:24 AEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SerializeDeserialize -->
+      </class> <!-- MapAPISpecBuilder -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
