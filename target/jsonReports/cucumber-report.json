@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-12-19T11:54:13.437Z",
+        "start_timestamp": "2020-12-21T03:24:03.542Z",
         "before": [
           {
             "result": {
@@ -16,13 +16,12 @@
           }
         ],
         "line": 4,
-        "name": "Validate the ADD Place One API",
+        "name": "Validate the ADD Place One API service",
         "description": "",
-        "id": "validate-the-google-maps-add-and-get-feature;validate-the-add-place-one-api",
+        "id": "validate-the-google-maps-add-and-get-feature;validate-the-add-place-one-api-service",
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1650000000,
+              "duration": 2265000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 3191000000,
+              "duration": 3814000000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 7,
@@ -88,11 +87,10 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-12-19T11:54:18.403Z",
+        "start_timestamp": "2020-12-21T03:24:09.757Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -119,7 +117,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8000000,
+              "duration": 9000000,
               "status": "passed"
             },
             "line": 7,
@@ -131,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 2013000000,
+              "duration": 2160000000,
               "status": "passed"
             },
             "line": 8,
@@ -149,6 +147,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 9,
