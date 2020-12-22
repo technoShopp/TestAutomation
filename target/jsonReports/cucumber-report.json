@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-22T03:43:52.579Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16661000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.CucumberHooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Check the addition operation",
+        "description": "",
+        "id": "to-validate-the-basic-functionality-of-mobile-calculator;check-the-addition-operation",
+        "after": [
+          {
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.CucumberHooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2275000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the numbers abc",
+            "match": {
+              "location": "stepDefinitions.MobileCalculatorStepDefinitions.the_numbers_abc()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the numbers def",
+            "match": {
+              "location": "stepDefinitions.MobileCalculatorStepDefinitions.the_numbers_def()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6682000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the addition opeartion is performed",
+            "match": {
+              "location": "stepDefinitions.MobileCalculatorStepDefinitions.the_addition_opeartion_is_performed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the sum should be equal to the correct number",
+            "match": {
+              "location": "stepDefinitions.MobileCalculatorStepDefinitions.the_sum_should_be_equal_to_the_correct_number()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@auto"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the basic functionality of mobile calculator",
+    "description": "",
+    "id": "to-validate-the-basic-functionality-of-mobile-calculator",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/MobileCalculator.feature",
+    "tags": []
+  }
+]
