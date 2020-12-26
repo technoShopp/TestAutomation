@@ -40,6 +40,7 @@ public class MobileCalculatorTestScenarios {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME,device );
+		System.out.println(device);
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
