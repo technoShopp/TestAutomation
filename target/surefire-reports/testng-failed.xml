@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Listeners.TestListeners"/>
+    <listener class-name="Utilities.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="MobileCalc(failed)">
+    <classes>
+      <class name="Java.Framework.MobileCalculatorTestScenarios">
+        <methods>
+          <include name="writeMobileCalculatorTestScenarios"/>
+          <include name="shutDown"/>
+          <include name="Config"/>
+        </methods>
+      </class> <!-- Java.Framework.MobileCalculatorTestScenarios -->
+    </classes>
+  </test> <!-- MobileCalc(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -6,13 +6,15 @@ import java.net.MalformedURLException;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -24,6 +26,8 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class Tools {
 	private static AppiumDriverLocalService service;
 	private static AndroidDriver<AndroidElement> driver;
+	public static String log4jPath = System.getProperty("user.dir")+"\\log4j.properties";
+	public static Logger log = Logger.getLogger("devpinoyLogger");
 	
 	//Make it run on Jenkins -----
 	private static final String NODE_JS_PATH = "C:/Program Files/nodejs/node.exe";
@@ -33,12 +37,15 @@ public class Tools {
 	
 	public static AndroidDriver<AndroidElement> intializeDriver(DesiredCapabilities cap) throws Throwable
 	{
-		
+		PropertyConfigurator.configure(log4jPath);
+		log.info("Server initializing");
 	// 	driver =new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap); for local execution, please invoke it
 		//---- Just for jenkins
 		driver =new AndroidDriver<AndroidElement>(service,cap);
+		log.info("Server initialized");
 		//--- just for jenkins
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		log.info("Browser Maximized");
 		return driver;
 	}
 	
@@ -105,19 +112,22 @@ public class Tools {
 	public static void stopServer(AppiumDriverLocalService serviceFrom)
 	{
 		serviceFrom.stop();
+		log.info("Server stopped");
 	}
 	
 	public static void killAllNodes()throws Exception
 	{
+		log.info("Ended all the node services");
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
 		Thread.sleep(3000);
 	}
 	
 	public static void getScreenshots(String fileName) throws Throwable
 	{
+	
 	File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\"+fileName+".png"));
-		
+	log.info("Took the screenshots");
 	}
 	
 	

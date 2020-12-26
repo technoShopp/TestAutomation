@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 
 import PageObject.MobileCalculatorPageObject;
 import Utilities.TestData;
+import Utilities.Tools;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -34,6 +35,7 @@ public class MobileCalculatorTestScenarios {
 	@BeforeTest
 	public void Config() throws Throwable
 	{	
+		Tools.log.info("Before Test Started");
 		device= System.getProperty("deviceName");
 		Utilities.Tools.killAllNodes();
 		serviceMC = Utilities.Tools.startServer();
@@ -48,7 +50,7 @@ public class MobileCalculatorTestScenarios {
 		cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.sec.android.app.popupcalculator.Calculator");
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "10000");
 		driverApp=Utilities.Tools.intializeDriver(cap);
-		
+		Tools.log.info("Before Test Ended");
 		
 	}
 	
@@ -59,7 +61,7 @@ public class MobileCalculatorTestScenarios {
 	public void writeMobileCalculatorTestScenarios(String display) throws Throwable
 	{
 		
-	
+			Tools.log.info(" Test Started");
 		MobileCalculatorPageObject mcpb= new MobileCalculatorPageObject(driverApp);
 		mcpb.getElementNumbers().get(12).click();
 		mcpb.getElementNumbers().get(13).click();
@@ -88,16 +90,17 @@ public class MobileCalculatorTestScenarios {
 			System.out.println(actSum);
 			System.out.println(display);
 		Assert.assertEquals(actSum, expSum);
+		Tools.log.info(" Test Ended");
 	
 	}
 
 		@AfterTest
 		public void shutDown()
 		{
-			
+			Tools.log.info("After Test Started");
 			driverApp.closeApp();
 			Utilities.Tools.stopServer(serviceMC);
-			
+			Tools.log.info("After Test Ended");
 		}
 	
 	

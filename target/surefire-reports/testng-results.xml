@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41925" started-at="2020-12-26T05:27:12Z" finished-at="2020-12-26T05:27:54Z">
+  <suite name="Suite" duration-ms="36937" started-at="2020-12-26T09:33:55Z" finished-at="2020-12-26T09:34:32Z">
     <groups>
     </groups>
-    <test name="MobileCalc" duration-ms="41925" started-at="2020-12-26T05:27:12Z" finished-at="2020-12-26T05:27:54Z">
+    <test name="MobileCalc" duration-ms="36937" started-at="2020-12-26T09:33:55Z" finished-at="2020-12-26T09:34:32Z">
       <class name="Java.Framework.MobileCalculatorTestScenarios">
-        <test-method status="PASS" signature="Config()[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@643b1d11]" name="Config" is-config="true" duration-ms="17719" started-at="2020-12-26T05:27:12Z" finished-at="2020-12-26T05:27:30Z">
+        <test-method status="PASS" signature="Config()[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@36d4b5c]" name="Config" is-config="true" duration-ms="21738" started-at="2020-12-26T09:33:55Z" finished-at="2020-12-26T09:34:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Config -->
-        <test-method status="PASS" signature="writeMobileCalculatorTestScenarios(java.lang.String)[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@643b1d11]" name="writeMobileCalculatorTestScenarios" duration-ms="13299" started-at="2020-12-26T05:27:30Z" data-provider="inputDisplay" finished-at="2020-12-26T05:27:43Z">
+        <test-method status="PASS" signature="writeMobileCalculatorTestScenarios(java.lang.String)[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@36d4b5c]" name="writeMobileCalculatorTestScenarios" duration-ms="7766" started-at="2020-12-26T09:34:17Z" data-provider="inputDisplay" finished-at="2020-12-26T09:34:25Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeMobileCalculatorTestScenarios -->
-        <test-method status="PASS" signature="writeMobileCalculatorTestScenarios(java.lang.String)[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@643b1d11]" name="writeMobileCalculatorTestScenarios" duration-ms="10660" started-at="2020-12-26T05:27:43Z" data-provider="inputDisplay" finished-at="2020-12-26T05:27:54Z">
+        <test-method status="PASS" signature="writeMobileCalculatorTestScenarios(java.lang.String)[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@36d4b5c]" name="writeMobileCalculatorTestScenarios" duration-ms="7182" started-at="2020-12-26T09:34:25Z" data-provider="inputDisplay" finished-at="2020-12-26T09:34:32Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeMobileCalculatorTestScenarios -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@643b1d11]" name="shutDown" is-config="true" duration-ms="217" started-at="2020-12-26T05:27:54Z" finished-at="2020-12-26T05:27:54Z">
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:Java.Framework.MobileCalculatorTestScenarios@36d4b5c]" name="shutDown" is-config="true" duration-ms="220" started-at="2020-12-26T09:34:32Z" finished-at="2020-12-26T09:34:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
