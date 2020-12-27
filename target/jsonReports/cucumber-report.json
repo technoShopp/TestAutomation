@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-27T21:57:29.106Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5470000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Addition operation",
+        "description": "",
+        "id": "to-test-the-addition-feature-of-the-mobile-calculator;addition-operation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12276000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the MobileCalculatorApp",
+            "match": {
+              "location": "StepDefinitions.MobileCalculatorSD.the_mobile_calculator_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2435000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the number one \"123\" is entered",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinitions.MobileCalculatorSD.the_number_one_is_entered(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the \"plus\" operator is clicked",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"plus\"",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefinitions.MobileCalculatorSD.the_operator_is_clicked(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2946000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the number two \"456\" is entered",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"456\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinitions.MobileCalculatorSD.the_number_two_is_entered(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 884000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the result must be the sum",
+            "match": {
+              "location": "StepDefinitions.MobileCalculatorSD.the_result_must_be_the_sum()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@auto"
+          }
+        ]
+      }
+    ],
+    "name": "To test the addition feature of the Mobile Calculator",
+    "description": "",
+    "id": "to-test-the-addition-feature-of-the-mobile-calculator",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/MobileCalculator.feature",
+    "tags": []
+  }
+]
