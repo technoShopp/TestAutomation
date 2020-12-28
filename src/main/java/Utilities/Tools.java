@@ -74,4 +74,9 @@ public class Tools {
 	FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\"+fileName+".png"));
 	}
 	
+	public static void closeDriver() throws Throwable
+	{
+	
+	driver.closeApp();
+	}
 }

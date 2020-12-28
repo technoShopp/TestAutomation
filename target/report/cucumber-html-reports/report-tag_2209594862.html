@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>28 Dec 2020, 07:57</td>
+      <td>29 Dec 2020, 07:49</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@auto</td>
-          <td      class="passed"    >5</td>
-          <td >0</td>
+          <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="18727000000">18.727</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="18139000000">18.139</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">18.727</span>
+  <span class="lead-duration duration">18.139</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Addition operation</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">StepDefinitions.Hooks.beforeScenario()</span>
 
-  <span class="lead-duration duration">5.470</span>
+  <span class="lead-duration duration">5.461</span>
 
           </div>
 
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the MobileCalculatorApp</span>
 
-  <span class="lead-duration duration">12.276</span>
+  <span class="lead-duration duration">11.891</span>
 
 </div>
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the number one <span class="argument">&quot;123&quot;</span> is entered</span>
 
-  <span class="lead-duration duration">2.435</span>
+  <span class="lead-duration duration">2.249</span>
 
 </div>
 
@@ -312,7 +312,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the <span class="argument">&quot;plus&quot;</span> operator is clicked</span>
 
-  <span class="lead-duration duration">0.186</span>
+  <span class="lead-duration duration">0.166</span>
 
 </div>
 
@@ -339,7 +339,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the number two <span class="argument">&quot;456&quot;</span> is entered</span>
 
-  <span class="lead-duration duration">2.946</span>
+  <span class="lead-duration duration">3.729</span>
 
 </div>
 
@@ -362,11 +362,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">the result must be the sum</span>
 
-  <span class="lead-duration duration">0.884</span>
+  <span class="lead-duration duration">0.104</span>
 
 </div>
 
@@ -374,6 +374,25 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected:&lt;579&gt; but was:&lt;11&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at StepDefinitions.MobileCalculatorSD.the_result_must_be_the_sum(MobileCalculatorSD.java:101)
+	at &#10045;.the result must be the sum(file:///C:/Users/maliniv/Desktop/Technology%20Upgrade/Appium/AppiumBDD/BDD/src/test/java/Feature/MobileCalculator.feature:10)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -393,7 +412,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -405,13 +424,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">StepDefinitions.Hooks.afterScenario()</span>
+              <span class="location name">StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.050</span>
+  <span class="lead-duration duration">1.056</span>
 
           </div>
 

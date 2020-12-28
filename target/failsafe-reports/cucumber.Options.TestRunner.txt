@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.Options.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.329 sec - in cucumber.Options.TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.719 sec <<< FAILURE! - in cucumber.Options.TestRunner
+Addition operation(To test the addition feature of the Mobile Calculator)  Time elapsed: 24.92 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<579> but was:<11>
+

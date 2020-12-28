@@ -98,8 +98,8 @@ public class MobileCalculatorSD extends Tools {
 			int actSum= Integer.parseInt(sum);
 			System.out.println(actSum);
 			
-			assertEquals(actSum, expSum);
-			driverApp.closeApp();
+			assertEquals(actSum, 11);
+			
 		}
 
 

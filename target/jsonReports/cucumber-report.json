@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-12-27T21:57:29.106Z",
+        "start_timestamp": "2020-12-28T21:49:11.276Z",
         "before": [
           {
             "result": {
-              "duration": 5470000000,
+              "duration": 5461000000,
               "status": "passed"
             },
             "match": {
@@ -22,11 +22,11 @@
         "after": [
           {
             "result": {
-              "duration": 50000000,
+              "duration": 1056000000,
               "status": "passed"
             },
             "match": {
-              "location": "StepDefinitions.Hooks.afterScenario()"
+              "location": "StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12276000000,
+              "duration": 11891000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2435000000,
+              "duration": 2249000000,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 186000000,
+              "duration": 166000000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 2946000000,
+              "duration": 3729000000,
               "status": "passed"
             },
             "line": 9,
@@ -101,8 +101,9 @@
           },
           {
             "result": {
-              "duration": 884000000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c579\u003e but was:\u003c11\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:555)\r\n\tat org.junit.Assert.assertEquals(Assert.java:542)\r\n\tat StepDefinitions.MobileCalculatorSD.the_result_must_be_the_sum(MobileCalculatorSD.java:101)\r\n\tat ✽.the result must be the sum(file:///C:/Users/maliniv/Desktop/Technology%20Upgrade/Appium/AppiumBDD/BDD/src/test/java/Feature/MobileCalculator.feature:10)\r\n",
+              "duration": 104000000,
+              "status": "failed"
             },
             "line": 10,
             "name": "the result must be the sum",

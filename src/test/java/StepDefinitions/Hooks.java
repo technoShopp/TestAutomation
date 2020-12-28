@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.TakesScreenshot;
 
 import Utilities.Tools;
 import io.appium.java_client.android.AndroidDriver;
@@ -12,6 +13,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class Hooks extends Tools {
 	
@@ -19,6 +21,7 @@ public class Hooks extends Tools {
 	private static final String APPIUM_JS_PATH = "C:/Users/maliniv/AppData/Roaming/npm/node_modules/appium/build/lib/main.js";
 	public static String log4jPath = System.getProperty("user.dir")+"\\log4j.properties";
 	public static Logger log = Logger.getLogger("devpinoyLogger");
+	
 	
 	@Before ("@auto")
 	public void beforeScenario() throws Throwable
@@ -47,11 +50,24 @@ public class Hooks extends Tools {
 		log.info("Server successfully started");
 		}
 	@After ("@auto")
-	public void afterScenario() throws Throwable
+	public void afterScenario(Scenario scenario) throws Throwable
 	{
 		
+		if(scenario.isFailed())
+		{
+			Tools.getScreenshots(scenario.getName());
+			log.info("failed and took screenshot");
+		}
+		else
+		{
+		log.info("passed");
+		}
+		Tools.closeDriver();
 		service.stop();
 		log.info("Server successfully stopped");
+		
+		
+		
 	}
 	
 	
