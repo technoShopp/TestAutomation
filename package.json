@@ -1,0 +1,24 @@
+{
+  "name": "JasmineTDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Config.js",
+  "dependencies": {
+    "protractor": "7.0.0",
+    "jasmine-core": "3.6.0",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "jasmine-data-provider": "2.2.0"
+  },
+  "scripts": {
+    "test": "protractor Config.js",
+    "smokeSuite": "protractor Config.js --suite smoke",
+    "regressionSuite": "protractor Config.js --suite regression",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webupdate": "./node_modules/.bin/webdriver-manager update",
+    "webstart": "./node_modules/.bin/webdriver-manager start",
+    "start": "npm run webupdate && npm run webstart"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
