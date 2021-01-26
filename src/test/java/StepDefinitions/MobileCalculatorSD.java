@@ -23,7 +23,7 @@ public class MobileCalculatorSD extends Tools {
 	
 		@Given("the MobileCalculatorApp")
 		public void the_mobile_calculator_app() throws Throwable {
-			device= System.getProperty("deviceName");
+			device= System.getProperty("dN");
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME,device );
 			System.out.println(device);
